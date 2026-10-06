@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#171914">
+    <meta name="theme-color" content="#111111">
     <meta name="description" content="Encuentra discos clásicos y nuevos en Tica's Vinyls. Una tienda independiente para amantes de la música en vinilo.">
     <title>Tica's Vinyls — Discos para escuchar de verdad</title>
     <link rel="stylesheet" href="style.css">
@@ -11,10 +11,9 @@
 <body>
     <aside class="menu-lateral">
         <a class="logo" href="#inicio" aria-label="Tica's Vinyls, inicio">
-            <img src="img/logo.jpg" alt="Logotipo de Tica's Vinyls">
+            <img src="img/logo.png" alt="Logotipo de Tica's Vinyls">
         </a>
-
-        <p class="menu-etiqueta">Explora la tienda</p>
+        <p class="menu-etiqueta">VINYL · AUDIO · CULTURE</p>
         <nav aria-label="Navegación principal">
             <a href="#inicio" class="menu-enlace activo"><span aria-hidden="true">⌂</span>Inicio</a>
             <a href="#catalogo" class="menu-enlace"><span aria-hidden="true">◉</span>Discos</a>
@@ -22,47 +21,34 @@
             <a href="#nosotros" class="menu-enlace"><span aria-hidden="true">✳</span>La tienda</a>
             <a href="#contacto" class="menu-enlace"><span aria-hidden="true">↗</span>Contacto</a>
         </nav>
-
         <div class="nota-tienda">
             <span class="nota-punto" aria-hidden="true"></span>
-            <p>Discos elegidos<br>con mucho oído.</p>
+            <p>Discos escogidos<br>para escuchar de verdad.</p>
         </div>
-
-        <div class="redes" aria-label="Contacto">
-            <a href="mailto:hola@ticasvinyls.com" aria-label="Escribir por correo">✉</a>
-            <span>Hecho para melómanos</span>
-        </div>
+        <a class="sidebar-cta" href="mailto:hola@ticasvinyls.com">Hablemos de música <span aria-hidden="true">↗</span></a>
     </aside>
 
     <main class="contenido">
-        <header class="barra-superior">
-            <span>TIENDA INDEPENDIENTE · DESDE COSTA RICA</span>
-            <a href="#catalogo">Encuentra tu próximo disco <span aria-hidden="true">↘</span></a>
-        </header>
-
         <section class="hero" id="inicio">
-            <div class="hero-fondo" aria-hidden="true"></div>
+            <div class="hero-fondo">
+                <img src="img/vinillo2.avif" alt="" fetchpriority="high">
+            </div>
+            <a class="hero-credit" href="#credito-geekcode">Diseño web por <strong>geekCode</strong></a>
             <div class="hero-contenido">
-                <p class="subtitulo"><span class="punto-acento"></span>VINYL · AUDIO · CULTURE</p>
-                <h1>La música<br>se <em>siente</em><br>mejor en vinilo.</h1>
-                <p class="eslogan">Clásicos que conoces. Joyas que estás por descubrir. Todos con una historia esperando a sonar.</p>
-                <a href="#catalogo" class="boton">Explorar discos <span aria-hidden="true">↗</span></a>
-                <p class="hero-nota">Pon la aguja. Quédate un rato.</p>
+                <p class="subtitulo">UNA FORMA DISTINTA DE ESCUCHAR</p>
+                <h1>Vuelve a<br>sentir la música.</h1>
+                <p class="eslogan">Grandes discos, buen sonido y el placer de escuchar sin prisa.</p>
+                <a href="#catalogo" class="boton">Descubrir discos <span aria-hidden="true">↗</span></a>
             </div>
-            <div class="hero-sello" aria-label="Sonido para escuchar una y otra vez">
-                <span>SONIDO<br>PARA<br>QUEDARSE</span>
-                <span class="sello-estrella" aria-hidden="true">✳</span>
-            </div>
-            <a class="scroll-indicador" href="#catalogo"><span></span>BAJA Y EXPLORA</a>
         </section>
 
         <section class="catalogo" id="catalogo">
             <div class="catalogo-cabecera">
                 <div>
-                    <p class="etiqueta">LA CAJA DE DISCOS</p>
-                    <h2>Encuentra tu <em>siguiente favorito.</em></h2>
+                    <p class="etiqueta">LA COLECCIÓN</p>
+                    <h2>Discos para volver<br>a escuchar.</h2>
                 </div>
-                <p class="catalogo-intro">De esos álbumes que se escuchan de principio a fin y nunca pasan de moda.</p>
+                <p class="catalogo-intro">De clásicos inolvidables a nuevos favoritos: encuentra el sonido que va contigo.</p>
             </div>
 
             <div class="catalogo-herramientas">
@@ -85,7 +71,6 @@
                 <article class="disco-card" data-genero="rock" data-busqueda="queen a night at the opera bohemian rhapsody rock">
                     <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Queen%20%E2%80%94%20A%20Night%20at%20the%20Opera" aria-label="Consultar por A Night at the Opera de Queen">
                         <div class="portada portada-queen">
-                            <span class="portada-sello">EDICIÓN CLÁSICA</span>
                             <span class="portada-titulo">A NIGHT<br>AT THE<br>OPERA</span>
                             <span class="portada-artista">QUEEN</span>
                             <span class="disco-vinilo" aria-hidden="true"></span>
@@ -100,7 +85,6 @@
                 <article class="disco-card" data-genero="pop" data-busqueda="amy winehouse back to black soul pop">
                     <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Amy%20Winehouse%20%E2%80%94%20Back%20to%20Black" aria-label="Consultar por Back to Black de Amy Winehouse">
                         <div class="portada portada-amy">
-                            <span class="portada-sello">FAVORITO DE LA CASA</span>
                             <span class="portada-titulo">BACK<br>TO<br>BLACK</span>
                             <span class="portada-artista">AMY WINEHOUSE</span>
                             <span class="disco-vinilo" aria-hidden="true"></span>
@@ -115,7 +99,6 @@
                 <article class="disco-card" data-genero="electronica" data-busqueda="daft punk random access memories electronica dance">
                     <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Daft%20Punk%20%E2%80%94%20Random%20Access%20Memories" aria-label="Consultar por Random Access Memories de Daft Punk">
                         <div class="portada portada-daft">
-                            <span class="portada-sello">PARA SUBIR EL VOLUMEN</span>
                             <span class="portada-titulo">RANDOM<br>ACCESS<br>MEMORIES</span>
                             <span class="portada-artista">DAFT PUNK</span>
                             <span class="disco-vinilo" aria-hidden="true"></span>
@@ -130,7 +113,6 @@
                 <article class="disco-card" data-genero="rock" data-busqueda="soda stereo cancion animal rock latino">
                     <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Soda%20Stereo%20%E2%80%94%20Canci%C3%B3n%20Animal" aria-label="Consultar por Canción Animal de Soda Stereo">
                         <div class="portada portada-soda">
-                            <span class="portada-sello">ROCK EN ESPAÑOL</span>
                             <span class="portada-titulo">CANCIÓN<br>ANIMAL</span>
                             <span class="portada-artista">SODA STEREO</span>
                             <span class="disco-vinilo" aria-hidden="true"></span>
@@ -145,7 +127,6 @@
                 <article class="disco-card" data-genero="rock" data-busqueda="fleetwood mac rumours rock pop">
                     <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Fleetwood%20Mac%20%E2%80%94%20Rumours" aria-label="Consultar por Rumours de Fleetwood Mac">
                         <div class="portada portada-fleetwood">
-                            <span class="portada-sello">UN DISCO INMORTAL</span>
                             <span class="portada-titulo">RUMOURS</span>
                             <span class="portada-artista">FLEETWOOD MAC</span>
                             <span class="disco-vinilo" aria-hidden="true"></span>
@@ -160,7 +141,6 @@
                 <article class="disco-card" data-genero="jazz" data-busqueda="miles davis kind of blue jazz">
                     <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Miles%20Davis%20%E2%80%94%20Kind%20of%20Blue" aria-label="Consultar por Kind of Blue de Miles Davis">
                         <div class="portada portada-miles">
-                            <span class="portada-sello">PARA ESCUCHAR SIN PRISA</span>
                             <span class="portada-titulo">KIND<br>OF<br>BLUE</span>
                             <span class="portada-artista">MILES DAVIS</span>
                             <span class="disco-vinilo" aria-hidden="true"></span>
@@ -181,10 +161,7 @@
 
         <section class="manifiesto" id="nosotros">
             <div class="manifiesto-imagen">
-                <div class="polaroid polaroid-1">
-                    <img src="img/vinilo.jpg" alt="Un rincón musical para descubrir y escuchar discos de vinilo" loading="lazy">
-                    <span>LA AGUJA EN EL SURCO.</span>
-                </div>
+                <img src="img/vinilo.jpeg" alt="Primer plano de un disco de vinilo en un tocadiscos" loading="lazy">
             </div>
             <div class="manifiesto-texto">
                 <p class="etiqueta">MÁS QUE UNA TIENDA</p>
@@ -205,7 +182,10 @@
         <footer>
             <a href="#inicio" class="footer-marca">TICA'S <span>VINYLS</span></a>
             <p>Una buena canción siempre merece otra vuelta. © 2026</p>
-            <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
+            <div class="footer-final">
+                <span class="footer-credit" id="credito-geekcode">Diseño y desarrollo por <strong>geekCode</strong></span>
+                <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
+            </div>
         </footer>
     </main>
 
@@ -247,6 +227,31 @@
         });
 
         buscar.addEventListener("input", actualizarDiscos);
+
+        const enlacesMenu = document.querySelectorAll(".menu-enlace");
+        enlacesMenu.forEach((enlace) => {
+            enlace.addEventListener("click", () => {
+                enlacesMenu.forEach((opcion) => opcion.classList.toggle("activo", opcion === enlace));
+            });
+        });
+
+        const seccionesMenu = [...enlacesMenu]
+            .map((enlace) => document.querySelector(enlace.getAttribute("href")))
+            .filter(Boolean);
+
+        const observadorSecciones = new IntersectionObserver((entradas) => {
+            const visible = entradas
+                .filter((entrada) => entrada.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+            if (!visible) return;
+
+            enlacesMenu.forEach((enlace) => {
+                enlace.classList.toggle("activo", enlace.getAttribute("href") === `#${visible.target.id}`);
+            });
+        }, { rootMargin: "-20% 0px -65% 0px", threshold: [0, 0.25, 0.5] });
+
+        seccionesMenu.forEach((seccion) => observadorSecciones.observe(seccion));
     </script>
 </body>
 </html>
