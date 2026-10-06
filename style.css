@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    min-width: 320px;
+    min-width: 0;
     margin: 0;
     background: var(--fondo);
     color: var(--papel);
@@ -754,36 +754,58 @@ p {
 
 .manifiesto-imagen {
     position: relative;
+    display: grid;
     min-height: 420px;
     overflow: hidden;
-    background: #383b31;
+    place-items: center;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(200, 210, 142, 0.13), transparent 34%),
+        #292b25;
 }
 
 .manifiesto-imagen::after {
     position: absolute;
-    inset: 45% 0 0;
-    background: linear-gradient(transparent, rgba(14, 15, 12, 0.74));
+    inset: 0;
+    z-index: 0;
+    border: 1px solid rgba(240, 234, 219, 0.08);
     content: "";
 }
 
-.manifiesto-imagen img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    object-fit: cover;
-    object-position: center;
+.polaroid {
+    position: relative;
+    z-index: 1;
+    width: min(62%, 280px);
+    aspect-ratio: 250 / 280;
+    padding: 10px 10px 34px;
+    background: #f4f4f4;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+    transform: rotate(-6deg);
+    transition: transform 180ms ease;
 }
 
-.imagen-nota {
+.polaroid:hover {
+    transform: rotate(-2deg) translateY(-3px);
+}
+
+.polaroid img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%);
+}
+
+.polaroid span {
     position: absolute;
-    z-index: 1;
-    bottom: 26px;
-    left: 30px;
-    color: #fff9e9;
+    right: 8px;
+    bottom: 10px;
+    left: 8px;
+    color: #333333;
+    font-family: "Oswald", Impact, sans-serif;
     font-size: 9px;
-    letter-spacing: 1.7px;
-    line-height: 1.7;
+    letter-spacing: 1.2px;
+    text-align: center;
 }
 
 .manifiesto-texto {
@@ -920,7 +942,7 @@ footer p {
 
 @media (max-width: 1050px) {
     :root {
-        --ancho-menu: 205px;
+        --ancho-menu: 240px;
     }
 
     .menu-lateral {
@@ -974,6 +996,7 @@ footer p {
 
     .logo {
         width: 112px;
+        height: auto;
         min-height: 46px;
         flex: 0 0 auto;
         justify-content: flex-start;
@@ -982,6 +1005,7 @@ footer p {
 
     .logo img {
         width: 108px;
+        height: auto;
         max-height: 48px;
     }
 
@@ -992,18 +1016,29 @@ footer p {
     }
 
     .menu-lateral nav {
+        min-width: 0;
+        flex: 1;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
         gap: 2px;
+        overflow-x: auto;
+        scrollbar-width: none;
         margin: 0;
+    }
+
+    .menu-lateral nav::-webkit-scrollbar {
+        display: none;
     }
 
     .menu-enlace {
         min-height: 38px;
+        flex: 0 0 auto;
         gap: 0;
         padding: 0 9px;
         font-size: 11px;
+        letter-spacing: 0.3px;
+        text-transform: none;
     }
 
     .menu-enlace span {
@@ -1038,6 +1073,7 @@ footer p {
 
     .hero h1 {
         font-size: clamp(56px, 12vw, 88px);
+        letter-spacing: 2px;
     }
 
     .hero-sello {
@@ -1116,10 +1152,12 @@ footer p {
 
     .logo {
         width: 85px;
+        height: auto;
     }
 
     .logo img {
         width: 82px;
+        height: auto;
     }
 
     .menu-lateral nav {
@@ -1165,7 +1203,7 @@ footer p {
 
     .hero h1 {
         font-size: clamp(51px, 15vw, 68px);
-        letter-spacing: -2.7px;
+        letter-spacing: 1px;
     }
 
     .eslogan {
