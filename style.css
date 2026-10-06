@@ -1,0 +1,679 @@
+/* ==================================================
+   CONFIGURACIÓN GENERAL
+   ================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #111111;
+    color: #f2f2f2;
+}
+
+
+/* ==================================================
+   MENÚ LATERAL
+   ================================================== */
+
+.menu-lateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 285px;
+    height: 100vh;
+
+    background-color: #111111;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 35px 20px;
+
+    border-right: 1px solid #444444;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 55px;
+    min-height: 90px;
+}
+
+.logo span {
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+.logo img {
+    width: 190px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* NAVEGACIÓN */
+
+.menu-lateral nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.menu-lateral nav a {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 20px;
+
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+/* Iconos del menú */
+
+.menu-lateral nav a span {
+    width: 25px;
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* Efecto al pasar el ratón */
+
+.menu-lateral nav a:hover {
+    background-color: #333333;
+}
+
+
+/* Elemento activo */
+
+.menu-lateral nav a.activo {
+    background-color: #444444;
+}
+
+
+/* REDES */
+
+.redes {
+    margin-top: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding-bottom: 15px;
+}
+
+.redes a {
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: #aaaaaa;
+
+    transform: scale(1.15);
+}
+
+
+/* ==================================================
+   CONTENIDO PRINCIPAL
+   ================================================== */
+
+.contenido {
+    margin-left: 285px;
+
+    min-height: 100vh;
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.hero {
+    min-height: 620px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.62),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1400&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* Contenido del hero */
+
+.hero-contenido {
+    width: 750px;
+
+    padding: 70px;
+
+    margin-left: 60px;
+}
+
+
+/* Texto pequeño */
+
+.subtitulo {
+    font-size: 18px;
+
+    letter-spacing: 7px;
+
+    color: #eeeeee;
+
+    margin-bottom: 20px;
+}
+
+
+/* Título principal */
+
+.hero h1 {
+    font-size: 76px;
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    color: #ffffff;
+
+    margin-bottom: 30px;
+}
+
+
+/* Eslogan */
+
+.eslogan {
+    max-width: 600px;
+
+    font-size: 29px;
+
+    line-height: 1.4;
+
+    color: #eeeeee;
+
+    margin-bottom: 40px;
+}
+
+
+/* ==================================================
+   BOTONES
+   ================================================== */
+
+.boton {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 15px 30px;
+
+    border: 2px solid #eeeeee;
+
+    border-radius: 30px;
+
+    color: #ffffff;
+
+    background-color: transparent;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+/* Flecha */
+
+.boton span {
+    font-size: 22px;
+}
+
+
+/* Hover */
+
+.boton:hover {
+    background-color: #eeeeee;
+
+    color: #111111;
+}
+
+
+/* Botón oscuro */
+
+.boton.oscuro {
+    background-color: #151515;
+
+    border-color: #151515;
+
+    color: #ffffff;
+}
+
+.boton.oscuro:hover {
+    background-color: #444444;
+
+    border-color: #444444;
+
+    color: #ffffff;
+}
+
+
+/* ==================================================
+   CATÁLOGO
+   ================================================== */
+
+.catalogo {
+    min-height: 350px;
+
+    background-color: #dddddd;
+
+    color: #111111;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 90px;
+}
+
+
+.seccion-contenido {
+    max-width: 750px;
+}
+
+
+/* Etiqueta pequeña */
+
+.etiqueta {
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* Títulos */
+
+h2 {
+    font-size: 52px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+
+.catalogo p:not(.etiqueta) {
+    max-width: 650px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==================================================
+   SOBRE NOSOTROS
+   ================================================== */
+
+.sobre-nosotros {
+    min-height: 520px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #eeeeee;
+
+    color: #151515;
+}
+
+
+/* Texto */
+
+.texto-nosotros {
+    padding: 80px 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.texto-nosotros p:not(.etiqueta) {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+}
+
+
+.texto-nosotros .boton {
+    align-self: flex-start;
+
+    margin-top: 15px;
+}
+
+
+/* Imagen */
+
+.imagen-vinilo {
+    min-height: 520px;
+
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.imagen-vinilo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: grayscale(100%);
+}
+
+/* ==================================================
+   CONTACTO
+   ================================================== */
+
+.contacto {
+    min-height: 330px;
+
+    padding: 80px;
+
+    background-color: #222222;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.contacto h2 {
+    margin-bottom: 15px;
+}
+
+
+.contacto p {
+    font-size: 19px;
+
+    margin-bottom: 30px;
+
+    color: #cccccc;
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    min-height: 80px;
+
+    padding: 25px 45px;
+
+    background-color: #0b0b0b;
+
+    color: #bbbbbb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+.footer-enlaces {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.footer-enlaces a {
+    color: #bbbbbb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.footer-enlaces a:hover {
+    color: #ffffff;
+}
+
+
+/* ==================================================
+   ADAPTACIÓN A PANTALLAS PEQUEÑAS
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    /* El menú pasa arriba */
+
+    .menu-lateral {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #444444;
+    }
+
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+
+    .logo img {
+        width: 130px;
+    }
+
+
+    .menu-lateral nav {
+        flex-direction: row;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .menu-lateral nav a {
+        padding: 10px 15px;
+
+        font-size: 13px;
+    }
+
+
+    .redes {
+        margin-top: 20px;
+    }
+
+
+    .contenido {
+        margin-left: 0;
+    }
+
+
+    .hero {
+        min-height: 550px;
+    }
+
+
+    .hero-contenido {
+        width: auto;
+
+        margin-left: 0;
+
+        padding: 45px;
+    }
+
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+
+    .sobre-nosotros {
+        grid-template-columns: 1fr;
+    }
+
+
+    .imagen-vinilo {
+        min-height: 400px;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-contenido {
+        padding: 30px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .eslogan {
+        font-size: 22px;
+    }
+
+
+    .catalogo {
+        padding: 55px 30px;
+    }
+
+
+    .texto-nosotros {
+        padding: 55px 30px;
+    }
+
+
+    h2 {
+        font-size: 38px;
+    }
+
+
+    .footer-enlaces {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
