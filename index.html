@@ -219,11 +219,41 @@
         </section>
 
         <footer>
-            <a href="#inicio" class="footer-marca">TICA'S <span>VINYLS</span></a>
-            <p>Una buena canción siempre merece otra vuelta. © 2026</p>
-            <div class="footer-final">
-                <span class="footer-credit" id="credito-geekcode">Diseño y desarrollo por <strong>geekCode</strong></span>
-                <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
+            <div class="footer-contacto">
+                <div class="footer-contacto-intro">
+                    <p class="etiqueta">HABLEMOS DE MÚSICA</p>
+                    <h2>¿Buscas un disco?</h2>
+                    <p>Déjanos un mensaje y te responderemos desde nuestra tienda.</p>
+                    <a href="mailto:hola@ticasvinyls.com" class="footer-correo">hola@ticasvinyls.com <span aria-hidden="true">↗</span></a>
+                </div>
+                <form class="footer-formulario" id="formulario-contacto" aria-label="Enviar un mensaje a Tica's Vinyls">
+                    <div class="footer-campos">
+                        <label class="footer-campo">
+                            <span>Tu nombre</span>
+                            <input type="text" name="nombre" autocomplete="name" placeholder="¿Cómo te llamas?" required>
+                        </label>
+                        <label class="footer-campo">
+                            <span>Correo electrónico</span>
+                            <input type="email" name="correo" autocomplete="email" placeholder="tu@correo.com" required>
+                        </label>
+                        <label class="footer-campo footer-campo-mensaje">
+                            <span>Mensaje</span>
+                            <textarea name="mensaje" rows="3" placeholder="Cuéntanos qué estás buscando..." required></textarea>
+                        </label>
+                    </div>
+                    <div class="footer-enviar">
+                        <p>Se abrirá tu aplicación de correo para enviar el mensaje.</p>
+                        <button class="boton" type="submit">Preparar mensaje <span aria-hidden="true">↗</span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-inferior">
+                <a href="#inicio" class="footer-marca">TICA'S <span>VINYLS</span></a>
+                <p>Una buena canción siempre merece otra vuelta. © 2026</p>
+                <div class="footer-final">
+                    <span class="footer-credit" id="credito-geekcode">Diseño y desarrollo por <strong>geekCode</strong></span>
+                    <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
+                </div>
             </div>
         </footer>
     </main>
@@ -266,6 +296,18 @@
         });
 
         buscar.addEventListener("input", actualizarDiscos);
+
+        const formularioContacto = document.querySelector("#formulario-contacto");
+        formularioContacto.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            const datos = new FormData(formularioContacto);
+            const nombre = String(datos.get("nombre")).trim();
+            const correo = String(datos.get("correo")).trim();
+            const mensaje = String(datos.get("mensaje")).trim();
+            const cuerpo = `Nombre: ${nombre}\nCorreo: ${correo}\n\n${mensaje}`;
+            const asunto = `Mensaje desde Tica's Vinyls: ${nombre}`;
+            window.location.href = `mailto:hola@ticasvinyls.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        });
 
         const enlacesMenu = document.querySelectorAll(".menu-enlace");
         enlacesMenu.forEach((enlace) => {
