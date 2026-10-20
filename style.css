@@ -312,6 +312,127 @@ input:focus-visible {
     object-position: 55% center;
 }
 
+.producto-destacado {
+    position: relative;
+    display: grid;
+    width: min(100% - 88px, 1050px);
+    min-height: 480px;
+    grid-template-columns: minmax(220px, 0.85fr) 1fr;
+    align-items: center;
+    gap: clamp(40px, 8vw, 110px);
+    margin-inline: auto;
+    padding: 76px 0;
+}
+
+.destacado-portada {
+    position: relative;
+    display: flex;
+    width: min(100%, 390px);
+    aspect-ratio: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10%;
+    border: 1px solid rgba(241, 238, 229, 0.16);
+    border-radius: 14px;
+    background: linear-gradient(145deg, #91805f, #66583f 72%);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    isolation: isolate;
+}
+
+.destacado-portada::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.16), transparent 55%);
+    content: "";
+}
+
+.destacado-portada-sello,
+.destacado-portada-artista {
+    color: #f2e9d5;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+}
+
+.destacado-portada-titulo {
+    margin-top: 18px;
+    color: #f2e9d5;
+    font-family: "Oswald", Impact, sans-serif;
+    font-size: clamp(33px, 4.1vw, 56px);
+    font-weight: 600;
+    line-height: 0.96;
+}
+
+.destacado-portada-artista {
+    margin-top: 14px;
+}
+
+.destacado-vinilo {
+    position: absolute;
+    z-index: -1;
+    right: -28%;
+    bottom: -14%;
+    width: 68%;
+    aspect-ratio: 1;
+    border: 1px solid rgba(241, 238, 229, 0.13);
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle, #191a18 0 1px, #262724 2px 3px, #191a18 4px 6px);
+}
+
+.destacado-vinilo::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24%;
+    aspect-ratio: 1;
+    border: 2px solid rgba(241, 238, 229, 0.48);
+    border-radius: 50%;
+    background: #a99a75;
+    content: "";
+    transform: translate(-50%, -50%);
+}
+
+.destacado-texto {
+    max-width: 470px;
+}
+
+.destacado-texto h2 {
+    margin: 16px 0 8px;
+    font-family: "Oswald", Impact, sans-serif;
+    font-size: clamp(45px, 5.4vw, 70px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 0.99;
+}
+
+.destacado-artista {
+    margin: 0;
+    color: var(--acento);
+    font-size: 13px;
+}
+
+.destacado-descripcion {
+    max-width: 400px;
+    margin: 22px 0 25px;
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.destacado-numero {
+    position: absolute;
+    right: 0;
+    bottom: 34px;
+    color: #77786f;
+    font-family: "Oswald", Impact, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
 .catalogo {
     padding: 74px max(44px, calc((100% - 1160px) / 2)) 82px;
     border-top: 1px solid var(--linea);
@@ -798,6 +919,10 @@ footer p {
         padding-inline: 34px;
     }
 
+    .producto-destacado {
+        width: calc(100% - 58px);
+    }
+
     .manifiesto,
     .contacto,
     footer {
@@ -907,6 +1032,35 @@ footer p {
     .hero-fondo {
         height: 100%;
         border-radius: 12px;
+    }
+
+    .producto-destacado {
+        width: min(100% - 36px, 560px);
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+        padding: 47px 0 58px;
+    }
+
+    .destacado-portada {
+        width: min(100%, 340px);
+    }
+
+    .destacado-portada-titulo {
+        font-size: clamp(38px, 11vw, 54px);
+    }
+
+    .destacado-texto {
+        width: 100%;
+        padding: 0 3px;
+    }
+
+    .destacado-texto h2 {
+        font-size: 47px;
+    }
+
+    .destacado-numero {
+        bottom: 23px;
     }
 
     .catalogo {
