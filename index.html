@@ -16,10 +16,10 @@
         <p class="menu-etiqueta">VINYL · AUDIO · CULTURE</p>
         <nav aria-label="Navegación principal">
             <a href="#inicio" class="menu-enlace activo"><span aria-hidden="true">⌂</span>Inicio</a>
-            <a href="#destacado" class="menu-enlace"><span aria-hidden="true">✦</span>Destacado</a>
             <a href="#catalogo" class="menu-enlace"><span aria-hidden="true">◉</span>Discos</a>
             <a href="#generos" class="menu-enlace"><span aria-hidden="true">♫</span>Géneros</a>
             <a href="#nosotros" class="menu-enlace"><span aria-hidden="true">✳</span>La tienda</a>
+            <a href="#historia" class="menu-enlace"><span aria-hidden="true">◷</span>Historia</a>
             <a href="#contacto" class="menu-enlace"><span aria-hidden="true">↗</span>Contacto</a>
         </nav>
         <div class="nota-tienda">
@@ -41,32 +41,6 @@
                 <p class="eslogan">Grandes discos, buen sonido y el placer de escuchar sin prisa.</p>
                 <a href="#catalogo" class="boton">Descubrir discos <span aria-hidden="true">↗</span></a>
             </div>
-        </section>
-
-        <section class="producto-destacado" id="destacado" aria-labelledby="destacado-titulo">
-            <div class="destacado-portada" aria-hidden="true">
-                <span class="destacado-portada-sello">TICA'S VINYLS<br>SELECCIÓN</span>
-                <span class="destacado-portada-titulo">A NIGHT<br>AT THE<br>OPERA</span>
-                <span class="destacado-portada-artista">QUEEN</span>
-                <span class="destacado-cd"></span>
-            </div>
-            <div class="destacado-texto">
-                <p class="etiqueta">EL CLÁSICO DESTACADO</p>
-                <h2 id="destacado-titulo">A Night at<br>the Opera</h2>
-                <p class="destacado-artista">Queen <span aria-hidden="true">·</span> Rock</p>
-<<<<<<< HEAD
-                <p class="destacado-descripcion">Una mezcla inolvidable de rock, armonías y grandes canciones. Un álbum para disfrutar de principio a fin.</p>
-                <div class="destacado-compra">
-                    <span class="destacado-formato">EDICIÓN CD</span>
-                    <strong class="destacado-precio">14,99 <span>€</span></strong>
-                </div>
-                <a class="boton" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20el%20CD%20de%20Queen%20%E2%80%94%20A%20Night%20at%20the%20Opera">Consultar disponibilidad <span aria-hidden="true">↗</span></a>
-=======
-                <p class="destacado-descripcion">De la energía de “Death on Two Legs” al viaje de “Bohemian Rhapsody”: Queen convierte cada canción en una historia. Dale la vuelta al disco y déjate sorprender otra vez.</p>
-                <a class="boton" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Queen%20%E2%80%94%20A%20Night%20at%20the%20Opera">Consultar disponibilidad <span aria-hidden="true">↗</span></a>
->>>>>>> rama-footer
-            </div>
-            <span class="destacado-numero" aria-hidden="true">01 / 06</span>
         </section>
 
         <section class="catalogo" id="catalogo">
@@ -198,6 +172,44 @@
             </div>
         </section>
 
+        <section class="historia" id="historia">
+
+            <div class="historia-imagen">
+                <img src="img/vinillo2.avif" alt="Disco de vinilo de Tica's Vinyls">
+            </div>
+
+            <div class="historia-texto">
+                <p class="etiqueta">EL COMIENZO DE TODO</p>
+
+                <h2>Una historia que suena a <em>vinilo.</em></h2>
+
+                <p>
+                    Tica's Vinyls nace de una idea sencilla:
+                    la música se disfruta de otra manera cuando
+                    le dedicas tiempo. Nos encanta descubrir
+                    nuevos álbumes y disfrutar de cada canción.
+                </p>
+
+                <p>
+                    Creemos que cada disco guarda algo especial:
+                    recuerdos, emociones y canciones que siempre
+                    encuentran el momento adecuado para volver a sonar.
+                </p>
+
+                <p>
+                    Más que vender discos, queremos compartir
+                    nuestra pasión por la música y ayudar a cada
+                    persona a encontrar su propia banda sonora.
+                </p>
+
+                <a href="#catalogo" class="enlace-subrayado">
+                    Descubre nuestra colección
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+        </section>
+
         <section class="contacto" id="contacto">
             <p class="etiqueta">TU PRÓXIMO DISCO TE ESPERA</p>
             <h2>¿Qué te gustaría <em>escuchar?</em></h2>
@@ -207,41 +219,11 @@
         </section>
 
         <footer>
-            <div class="footer-contacto">
-                <div class="footer-contacto-intro">
-                    <p class="etiqueta">HABLEMOS DE MÚSICA</p>
-                    <h2>¿Buscas un disco?</h2>
-                    <p>Déjanos un mensaje y te responderemos desde nuestra tienda.</p>
-                    <a href="mailto:hola@ticasvinyls.com" class="footer-correo">hola@ticasvinyls.com <span aria-hidden="true">↗</span></a>
-                </div>
-                <form class="footer-formulario" id="formulario-contacto" aria-label="Enviar un mensaje a Tica's Vinyls">
-                    <div class="footer-campos">
-                        <label class="footer-campo">
-                            <span>Tu nombre</span>
-                            <input type="text" name="nombre" autocomplete="name" placeholder="¿Cómo te llamas?" required>
-                        </label>
-                        <label class="footer-campo">
-                            <span>Correo electrónico</span>
-                            <input type="email" name="correo" autocomplete="email" placeholder="tu@correo.com" required>
-                        </label>
-                        <label class="footer-campo footer-campo-mensaje">
-                            <span>Mensaje</span>
-                            <textarea name="mensaje" rows="3" placeholder="Cuéntanos qué estás buscando..." required></textarea>
-                        </label>
-                    </div>
-                    <div class="footer-enviar">
-                        <p>Se abrirá tu aplicación de correo para enviar el mensaje.</p>
-                        <button class="boton" type="submit">Preparar mensaje <span aria-hidden="true">↗</span></button>
-                    </div>
-                </form>
-            </div>
-            <div class="footer-inferior">
-                <a href="#inicio" class="footer-marca">TICA'S <span>VINYLS</span></a>
-                <p>Una buena canción siempre merece otra vuelta. © 2026</p>
-                <div class="footer-final">
-                    <span class="footer-credit" id="credito-geekcode">Diseño y desarrollo por <strong>geekCode</strong></span>
-                    <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
-                </div>
+            <a href="#inicio" class="footer-marca">TICA'S <span>VINYLS</span></a>
+            <p>Una buena canción siempre merece otra vuelta. © 2026</p>
+            <div class="footer-final">
+                <span class="footer-credit" id="credito-geekcode">Diseño y desarrollo por <strong>geekCode</strong></span>
+                <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
             </div>
         </footer>
     </main>
@@ -284,18 +266,6 @@
         });
 
         buscar.addEventListener("input", actualizarDiscos);
-
-        const formularioContacto = document.querySelector("#formulario-contacto");
-        formularioContacto.addEventListener("submit", (evento) => {
-            evento.preventDefault();
-            const datos = new FormData(formularioContacto);
-            const nombre = String(datos.get("nombre")).trim();
-            const correo = String(datos.get("correo")).trim();
-            const mensaje = String(datos.get("mensaje")).trim();
-            const cuerpo = `Nombre: ${nombre}\nCorreo: ${correo}\n\n${mensaje}`;
-            const asunto = `Mensaje desde Tica's Vinyls: ${nombre}`;
-            window.location.href = `mailto:hola@ticasvinyls.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
-        });
 
         const enlacesMenu = document.querySelectorAll(".menu-enlace");
         enlacesMenu.forEach((enlace) => {
