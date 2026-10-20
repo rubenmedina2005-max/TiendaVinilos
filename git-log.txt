@@ -1,0 +1,39 @@
+* d2e466c cambios de laura en el proyecto
+*   64c2bec union del html formulario con main
+|\  
+| * 21ddc60 cambios en el formulario y su diseño
+| * 324f1ed añadido el footer con formulario
+* | c51416c añadido precio y solucionado problemas de overflow
+|/  
+* 708004c añadida una landing page
+* 56f8882 ultimo commit, arreglado el logo y redondeado los bordes ademas de dado un toque final a todo el diseño de la web
+* 0fb9acc cambio final del diseño de la web, retoque de los elementos y visuales
+* bdc83a2 añadidos generos para los discos y pagina de contacto, cambios en el css para adaptar a los nuevos elementos
+* e7134a5 nuevos cambios en el css, a parte de nuevas imagenes y elementos
+* b061399 añadido la primera capa de css y ampliado la cantidad de elementos, a parte de textos y mas elementos del html
+* f791364 error de stagin, solucionado archivo basura borrao
+* a5990f7 creacion de la web basica y el css vacio
+* b24c375 Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 4
+* ecf797a Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 4 start
+* 5811abc Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 3
+* bf1beea Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 3 start
+* 6186d99 Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 2
+* 6b86013 Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 2 start
+* 2f32195 Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 1
+* 6ed782b Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - turn 1 start
+* fdf1ea5 Agent host session 255465ed-f338-471f-afc9-0d5ef76146d9 - baseline checkpoint
+* bfe7933 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 7
+* 61d5b5d Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 7 start
+* 10ace80 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 6
+* 94868c5 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 6 start
+* 94ef009 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 5
+* 5f95f78 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 5 start
+* 6b9d96a Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 4
+* 2416b86 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 4 start
+* 1496f11 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 3
+* 2aa3335 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 3 start
+* 0418c67 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 2
+* 3f6e997 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 2 start
+* 0a8ad8e Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 1
+* 2013d38 Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - turn 1 start
+* 0f7f36d Agent host session c612c750-95e2-45b6-9fe0-0dfd32ae6bfc - baseline checkpoint

@@ -243,6 +243,7 @@ input:focus-visible {
 .hero h1,
 .catalogo h2,
 .manifiesto h2,
+.historia h2,
 .contacto h2 {
     font-family: "Oswald", Impact, sans-serif;
     font-weight: 500;
@@ -258,6 +259,7 @@ input:focus-visible {
 .hero h1 em,
 .catalogo h2 em,
 .manifiesto h2 em,
+.historia h2 em,
 .contacto h2 em {
     color: var(--acento);
     font-style: normal;
@@ -692,6 +694,56 @@ input:focus-visible {
     font-size: 11px;
 }
 
+.historia {
+    display: grid;
+    width: min(100% - 88px, 1160px);
+    min-height: 450px;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: clamp(40px, 7vw, 95px);
+    margin-inline: auto;
+    padding: 74px 0;
+}
+
+.historia-imagen {
+    min-width: 0;
+    height: clamp(300px, 35vw, 430px);
+    overflow: hidden;
+    border: 1px solid var(--linea);
+    border-radius: 14px;
+    background: #37332a;
+}
+
+.historia-imagen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 450ms ease;
+}
+
+.historia-imagen:hover img {
+    transform: scale(1.025);
+}
+
+.historia-texto {
+    max-width: 440px;
+}
+
+.historia h2 {
+    margin: 17px 0;
+    font-size: clamp(37px, 4vw, 52px);
+    line-height: 1.08;
+}
+
+.historia-texto > p:not(.etiqueta) {
+    margin: 0 0 16px;
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
 .contacto {
     display: flex;
     width: min(100% - 88px, 1160px);
@@ -799,6 +851,7 @@ footer p {
     }
 
     .manifiesto,
+    .historia,
     .contacto,
     footer {
         width: calc(100% - 58px);
@@ -1010,7 +1063,19 @@ footer p {
         padding: 47px 0;
     }
 
+    .historia {
+        width: min(100% - 36px, 560px);
+        grid-template-columns: 1fr;
+        gap: 27px;
+        padding: 47px 0;
+    }
+
     .manifiesto-imagen {
+        height: clamp(230px, 70vw, 360px);
+        border-radius: 12px;
+    }
+
+    .historia-imagen {
         height: clamp(230px, 70vw, 360px);
         border-radius: 12px;
     }
@@ -1019,7 +1084,15 @@ footer p {
         padding: 0 3px;
     }
 
+    .historia-texto {
+        padding: 0 3px;
+    }
+
     .manifiesto h2 {
+        font-size: 39px;
+    }
+
+    .historia h2 {
         font-size: 39px;
     }
 
@@ -1062,5 +1135,9 @@ footer p {
     *::before,
     *::after {
         transition-duration: 0.01ms !important;
+    }
+
+    .historia-imagen:hover img {
+        transform: none;
     }
 }
